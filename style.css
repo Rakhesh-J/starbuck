@@ -1,6 +1,8 @@
 
 
-
+.black{
+    color: black;
+}
 
 .logo_div img{
     height: 50px;
@@ -58,14 +60,23 @@
 .contain{ 
     margin-top: 35px;
     width: auto;
-}
-.row{
     background-color:#042F04;
 }
-.section .text_boxa{
+.row{
+    
+}
+.row-4,.row-5,.row-6{
+    background-color:  #d4e9e2;
+    color: black;
+}
+.row img{
+    width: 100%;
+    display: block;
+}
+.section .text_boxa, .section .text_boxd,.section .text_boxe,.section .text_boxf{
     padding: 32px 48px;
 }
-.section .text_boxa p{
+.section .text_boxa p,.section .text_boxd p,.section .text_boxe p,.section .text_boxf p{
     font-size: 1.3em;
 }
 .section .text_boxb{
@@ -86,20 +97,48 @@
     align-items: center;
     justify-content: center;
 }
+.last-main{
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    align-items: center;
+}
 
-@media screen and (max-width) {
-    #div-a,#div-c,#div-e {
-      display: flex;
-      flex-direction: column;
-    }
-    #div-a div:first-child {
-        order: 1;
-      }
-    #div-c div:first-child {
-        order: 1;
-      }  
-    #div-e div:first-child {
-      order: 1;
-    }
-  }
 
+
+
+
+
+
+  
+@media (min-width: 780px){
+
+  
+    .last-main{
+        padding: 50px 200px 30px 200px;
+    }
+
+}
+@media (min-width: 1300px){
+
+    
+    .last-main{
+        padding: 50px 400px 30px 400px;
+    }
+
+}
+@media(min-width:1420px){
+    .section{
+        margin-top: 35px;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+}
+@media (max-width: 1024px){
+
+    .section .text_boxb h1, .section .text_boxc h1{
+        font-weight: bolder;
+        font-size:1.8em;
+    }
+
+}
