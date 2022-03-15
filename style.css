@@ -65,6 +65,66 @@
     color: white;
 }
 
+.sidebar{
+    position: fixed;
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    top: 100px;
+    right: 0;
+    padding: 35px 30px;
+    transition: all 0.3s;
+
+}
+.sidebar .heading{
+    border-bottom: rgba(0,0,0,.3) solid 1px;
+}
+.sidebar .heading a{
+    font-size: large;
+    font-weight: bold;
+    text-transform: ;
+    line-height: 50px;
+    
+}
+.sidebar .location a{
+    line-height: 50px;
+    
+}
+.sidebar .btn{
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+.sidebar .btn-1{
+    background-color: white;
+    
+
+}
+.sidebar .btn-1:hover{
+    background-color: #ebebeb;
+    color: black;
+}
+.sidebar .btn-2{
+    background-color: black;
+    color: white;  
+}
+.sidebar .btn-2:hover{
+    background-color: #464646;
+    color: white;
+}
+.hidden{
+    transform: translateX(100%);
+}
+.no-scroll{
+    overflow: hidden;
+}
+
+
 .contain{ 
     margin-top: 35px;
     width: auto;
@@ -142,9 +202,9 @@
     color: black;
 }
 .main-tble .main-1 .tble{
-    width: 210px;
+    width: 180px;
     height: auto;
-    margin: 0 15px;
+    margin: 0 10px;
     display: inline;
     display: block;
     float: left;
@@ -156,6 +216,11 @@
 .main-tble .tble li{
     padding: 10px 0px;
 }
+.drop{
+    display: none;
+}
+
+
 .footlast{
     width: 100%;
     display: block;
@@ -175,7 +240,7 @@
 }
 .footlast .policy{
     margin: 15px 0px;
-    display: flexbox;
+    
 }
 .policy ul li {
     display: inline-block;
@@ -206,6 +271,44 @@
     color: rgba(0,0,0,.58);
 }
 
+
+
+.drop{
+    margin: 30px 30px;
+}
+
+.drop-head{
+    width: 100%;
+    font-size: 30px;
+    padding-left: 10px;
+    padding-top: auto;
+    padding-bottom: auto;
+    text-align: end;
+    border: none;
+    background-color: white;
+    
+}
+.drop-head h5{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 400;
+}
+.drop-hide {
+    padding-left: 10px;
+    line-height: 50px;
+}
+
+.drop-hide{
+    list-style: none;
+}
+.drop-hide a{
+    text-decoration: none;
+    color: rgba(0,0,0,.58);
+}
+.drop-hide a:hover{
+    text-decoration: none;
+    color: black;
+}
 
 
 @media(max-width:768px){
@@ -265,12 +368,23 @@
         margin-bottom: 2rem;
         font-weight: 500;   
     }
+   
 
+}
+
+@media(max-width: 1024px){
+    .main-tble{
+        display: none;
+    }
+    .drop{
+        display: block;
+    }
 }
 @media (min-width:1024px){
     .footlast .policy span{
         display: inline-block;
         
     }
+    
    
 }
